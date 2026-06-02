@@ -312,7 +312,6 @@
     .hero-content h1 {
       font-family: var(--ff-display);
       font-size: clamp(2.8rem, 6vw, 5rem);
-      font-weight: 300;
       color: var(--cream);
       line-height: 1.08;
       margin-bottom: 20px;
@@ -342,6 +341,7 @@
     .hero-scroll {
       position: absolute;
       bottom: 32px;
+      font-weight: 300;
       left: 50%;
       transform: translateX(-50%);
       z-index: 2;
@@ -600,83 +600,7 @@
       font-weight: 300;
     }
 
-    /* ═══════════════════════════════════════
-       PORTFÓLIO
-    ═══════════════════════════════════════ */
-    #portfolio {
-      padding: 100px 0;
-      background: var(--dark);
-    }
-
-    #portfolio .section-header h2 {
-      color: var(--blush);
-    }
-
-    #portfolio .section-header .sub {
-      color: rgba(240,221,216,0.55);
-    }
-
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto;
-      gap: 14px;
-    }
-
-    .portfolio-item {
-      border-radius: var(--radius);
-      overflow: hidden;
-      position: relative;
-      cursor: pointer;
-    }
-
-    .portfolio-item:first-child {
-      grid-column: span 2;
-      grid-row: span 2;
-    }
-
-    .portfolio-item img {
-      width: 100%;
-      height: 100%;
-      min-height: 200px;
-      object-fit: cover;
-      filter: saturate(0.8);
-      transition: transform 0.5s, filter 0.5s;
-    }
-
-    .portfolio-item:first-child img { min-height: 420px; }
-
-    .portfolio-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(110,50,51,0);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: 0.4s;
-    }
-
-    .portfolio-overlay span {
-      color: var(--cream);
-      font-family: var(--ff-display);
-      font-size: 1rem;
-      letter-spacing: 1px;
-      opacity: 0;
-      transition: 0.3s;
-    }
-
-    .portfolio-item:hover img {
-      transform: scale(1.07);
-      filter: saturate(1.1);
-    }
-
-    .portfolio-item:hover .portfolio-overlay {
-      background: rgba(110,50,51,0.5);
-    }
-
-    .portfolio-item:hover .portfolio-overlay span {
-      opacity: 1;
-    }
+    
 
     /* ═══════════════════════════════════════
        CATÁLOGO WHATSAPP
@@ -1844,44 +1768,6 @@
 </section>
 
 
-<!-- ── DIFERENCIAIS ───────────────────────────── -->
-<section id="diferenciais">
-  <div class="container">
-
-    <div class="section-header">
-      <div class="ornament">✿</div>
-      <span class="eyebrow">Por que nos escolher</span>
-      <h2>Nossos Diferenciais</h2>
-      <p class="sub">O que torna a Eterna Primavera única</p>
-    </div>
-
-    <div class="dif-grid">
-      <div class="dif-card">
-        <div class="dif-icon">🌸</div>
-        <h3>Flores Selecionadas</h3>
-        <p>Trabalhamos apenas com flores frescas de alta qualidade, selecionadas diariamente para garantir durabilidade e esplendor em cada composição.</p>
-      </div>
-      <div class="dif-card">
-        <div class="dif-icon">🎨</div>
-        <h3>Design 100% Exclusivo</h3>
-        <p>Cada arranjo é uma obra única. Criamos composições personalizadas que expressam a essência do momento e a identidade de quem encomenda.</p>
-      </div>
-      <div class="dif-card">
-        <div class="dif-icon">🚚</div>
-        <h3>Entrega com Cuidado</h3>
-        <p>Embalagens especiais desenvolvidas para preservar cada pétala, garantindo que o arranjo chegue perfeito e deslumbrante ao seu destino.</p>
-      </div>
-      <div class="dif-card">
-        <div class="dif-icon">💬</div>
-        <h3>Atendimento Personalizado</h3>
-        <p>Do primeiro contato à entrega, nossa equipe está dedicada a entender e superar suas expectativas com atenção e carinho.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
 <!-- ── SERVIÇOS ───────────────────────────────── -->
 <section id="servicos">
   <div class="container">
@@ -1938,45 +1824,6 @@
 
   </div>
 </section>
-
-
-<!-- ── PORTFÓLIO ─────────────────────────────── -->
-<section id="portfolio">
-  <div class="container">
-
-    <div class="section-header">
-      <div class="ornament" style="color:var(--rose)">✿</div>
-      <span class="eyebrow">Trabalhos realizados</span>
-      <h2>Portfólio</h2>
-      <p class="sub">Uma seleção dos nossos projetos mais especiais</p>
-    </div>
-
-    <div class="portfolio-grid">
-      <div class="portfolio-item">
-        <img src="https://images.unsplash.com/photo-1487530811015-780f2bb55fea?q=80&w=1200&auto=format&fit=crop" alt="Casamento">
-        <div class="portfolio-overlay"><span>Casamento Silva &amp; Rocha</span></div>
-      </div>
-      <div class="portfolio-item">
-        <img src="https://images.unsplash.com/photo-1464820453369-31d2c0b651af?q=80&w=800&auto=format&fit=crop" alt="Evento">
-        <div class="portfolio-overlay"><span>Evento Corporativo</span></div>
-      </div>
-      <div class="portfolio-item">
-        <img src="https://images.unsplash.com/photo-1516054575922-f0b8eeadec1a?q=80&w=800&auto=format&fit=crop" alt="Buquê">
-        <div class="portfolio-overlay"><span>Coleção Primaveral</span></div>
-      </div>
-      <div class="portfolio-item">
-        <img src="https://images.unsplash.com/photo-1490750967868-88df5691cc5f?q=80&w=800&auto=format&fit=crop" alt="Decoração">
-        <div class="portfolio-overlay"><span>Decoração Residencial</span></div>
-      </div>
-      <div class="portfolio-item">
-        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800&auto=format&fit=crop" alt="Formatura">
-        <div class="portfolio-overlay"><span>Formatura UFMT 2025</span></div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
 
 <!-- ── CATÁLOGO WHATSAPP ──────────────────────────── -->
 <section id="catalogo">
@@ -2079,191 +1926,6 @@
 </section>
 
 
-<!-- ── NÚMEROS ────────────────────────────────── -->
-<section id="numeros">
-  <div class="container">
-    <div class="numeros-grid">
-      <div class="numero-item"><h3 class="count" data-target="8">0</h3><p>Anos de experiência</p></div>
-      <div class="numero-item"><h3 class="count" data-target="3200">0</h3><p>Arranjos entregues</p></div>
-      <div class="numero-item"><h3 class="count" data-target="120">0</h3><p>Eventos decorados</p></div>
-      <div class="numero-item"><h3 class="count" data-target="99">0</h3><p>% de satisfação</p></div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ── EQUIPE ─────────────────────────────────── -->
-<!--<section id="equipe">
-  <div class="container">
-
-    <div class="section-header">
-      <div class="ornament">✿</div>
-      <span class="eyebrow">Quem somos</span>
-      <h2>Nossa Equipe</h2>
-      <p class="sub">As mãos e corações por trás de cada criação</p>
-    </div>
-
-    <div class="team-grid">
-      <div class="team-card">
-        <div class="team-photo">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop" alt="Ana Primavera">
-        </div>
-        <h3>Ana Primavera</h3>
-        <p class="role">Fundadora &amp; Diretora Criativa</p>
-        <p class="bio">Florista há 8 anos, apaixonada por cores e texturas. Formada em Design de Interiores com especialização em arte floral.</p>
-      </div>
-
-      <div class="team-card">
-        <div class="team-photo">
-          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=400&auto=format&fit=crop" alt="Isabela Flores">
-        </div>
-        <h3>Isabela Flores</h3>
-        <p class="role">Designer Floral Sênior</p>
-        <p class="bio">Especialista em arranjos para casamentos e eventos sociais. Seu trabalho une delicadeza e modernidade em cada composição.</p>
-      </div>
-
-      <div class="team-card">
-        <div class="team-photo">
-          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=400&auto=format&fit=crop" alt="Camila Santos">
-        </div>
-        <h3>Camila Santos</h3>
-        <p class="role">Especialista em Eventos</p>
-        <p class="bio">Responsável pelo planejamento e execução de grandes eventos, garantindo que cada detalhe floral supere as expectativas.</p>
-      </div>
-
-      <div class="team-card">
-        <div class="team-photo">
-          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop" alt="Pedro Jardim">
-        </div>
-        <h3>Pedro Jardim</h3>
-        <p class="role">Logística &amp; Entregas</p>
-        <p class="bio">Garante que cada arranjo chegue com perfeição ao destino, tratando cada entrega com o mesmo cuidado de quem criou.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ── DEPOIMENTOS ───────────────────────────── -->
-<!--<section id="depoimentos">
-  <div class="container">
-
-    <div class="section-header">
-      <div class="ornament" style="color:var(--rose)">✿</div>
-      <span class="eyebrow">Clientes felizes</span>
-      <h2>Depoimentos</h2>
-      <p class="sub">O que dizem quem viveu a experiência Eterna Primavera</p>
-    </div>
-
-    <div class="dep-grid">
-      <div class="dep-card">
-        <div class="dep-stars">★★★★★</div>
-        <blockquote>"Os arranjos do meu casamento foram simplesmente perfeitos. Cada detalhe refletia exatamente o que eu havia sonhado. A Ana entendeu minha visão de um jeito que nem eu conseguia descrever."</blockquote>
-        <div class="dep-author">
-          <div class="dep-avatar">
-            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=100&auto=format&fit=crop" alt="Marina">
-          </div>
-          <div class="dep-info">
-            <strong>Marina &amp; Rafael Costa</strong>
-            <span>Casamento — Março 2025</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="dep-card">
-        <div class="dep-stars">★★★★★</div>
-        <blockquote>"A decoração floral do nosso evento corporativo foi impecável. Elegância e profissionalismo em cada detalhe. Recebemos elogios de todos os convidados — a Eterna Primavera superou todas as expectativas."</blockquote>
-        <div class="dep-author">
-          <div class="dep-avatar">
-            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=100&auto=format&fit=crop" alt="Grupo Valore">
-          </div>
-          <div class="dep-info">
-            <strong>Fernanda Alves</strong>
-            <span>Grupo Valore — Evento Corporativo</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="dep-card">
-        <div class="dep-stars">★★★★★</div>
-        <blockquote>"O buquê surpresa que ganhei foi o presente mais lindo que já recebi. As flores duraram mais de duas semanas e a embalagem artesanal foi um mimo à parte. Já indiquei para todas as amigas!"</blockquote>
-        <div class="dep-author">
-          <div class="dep-avatar">
-            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=100&auto=format&fit=crop" alt="Larissa">
-          </div>
-          <div class="dep-info">
-            <strong>Larissa Mendonça</strong>
-            <span>Cliente — Sorriso/MT</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ── BLOG ───────────────────────────────────── -->
-<!--<section id="blog">
-  <div class="container">
-
-    <div class="section-header">
-      <div class="ornament">✿</div>
-      <span class="eyebrow">Inspirações &amp; dicas</span>
-      <h2>Blog &amp; Novidades</h2>
-      <p class="sub">Conteúdo floral para inspirar o seu dia</p>
-    </div>
-
-    <div class="blog-grid">
-      <div class="blog-card">
-        <div class="blog-thumb">
-          <img src="https://images.unsplash.com/photo-1487530811015-780f2bb55fea?q=80&w=800&auto=format&fit=crop" alt="Blog 1">
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-tag">Tendências</span>
-            <span class="blog-date">15 Mai 2026</span>
-          </div>
-          <h3>Flores da Estação: O Que Está em Alta em 2026</h3>
-          <p>Descubra quais espécies dominam os arranjos este ano e como incorporá-las na sua decoração com elegância e personalidade.</p>
-          <a href="#" class="blog-link">Ler artigo →</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <div class="blog-thumb">
-          <img src="https://images.unsplash.com/photo-1490750967868-88df5691cc5f?q=80&w=800&auto=format&fit=crop" alt="Blog 2">
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-tag">Casamentos</span>
-            <span class="blog-date">02 Mai 2026</span>
-          </div>
-          <h3>Paletas Florais para Casamentos de Outono</h3>
-          <p>Como criar ambientações florais quentes, românticas e inesquecíveis para cerimônias realizadas no outono.</p>
-          <a href="#" class="blog-link">Ler artigo →</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <div class="blog-thumb">
-          <img src="https://images.unsplash.com/photo-1464820453369-31d2c0b651af?q=80&w=800&auto=format&fit=crop" alt="Blog 3">
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-tag">Dicas</span>
-            <span class="blog-date">18 Abr 2026</span>
-          </div>
-          <h3>Segredos para Conservar Flores por Mais Tempo</h3>
-          <p>Técnicas profissionais para manter seus arranjos frescos, vibrantes e bonitos por muito mais tempo em casa.</p>
-          <a href="#" class="blog-link">Ler artigo →</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
 
 
 <!-- ── FAQ ────────────────────────────────────── -->
@@ -2283,7 +1945,7 @@
           <h3>Vocês atendem eventos fora de Sorriso?</h3>
           <span class="faq-icon">+</span>
         </div>
-        <div class="faq-answer">Não, atendemos apenas a Sorriso</div>
+        <div class="faq-answer">Não, atendemos apenas dentro de Sorriso</div>
       </div>
 
       <div class="faq-item">
