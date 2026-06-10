@@ -1,4 +1,4 @@
-# Sentinel V1 🛡️
+# Sentinela V1 🛡️
 
 > Monitoramento inteligente e autônomo para ambientes críticos, desenvolvido para enfrentar os desafios climáticos do coração do agronegócio brasileiro.
 
